@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Folix Audio</title>
+  <meta name="description" content="Contact Folix Audio or join the newsletter.">
+  <meta name="theme-color" content="#05040d">
+  <meta property="og:title" content="Contact | Folix Audio">
+  <meta property="og:description" content="Contact Folix Audio or join the newsletter.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="Folix Audio home">
+      <img src="assets/img/mark.svg" alt="" width="40" height="40">
+      <span class="brand-word"><b data-brand="wordmark-top">FOLIX</b><span data-brand="wordmark-sub">AUDIO</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="plugins.html">Plugins</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li><li><a class="btn btn-sm" href="contact.html#newsletter">Join the list</a></li></ul>
+  </nav>
+</header>
+<main id="main">
+<section class="hero hero-sm">
+  <div class="nebula" aria-hidden="true"><i></i><i></i><i></i><i></i></div><canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="container">
+    <span class="eyebrow">Contact</span>
+    <h1 style="font-size:clamp(2.2rem,5.4vw,4.2rem)">Open a <span class="grad-text">channel</span></h1>
+    <p class="lead">Questions, feedback, beta testing, collaborations: send a signal and we'll get back to you.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:20px">
+  <div class="container contact-grid">
+    <form class="form glass reveal" data-demo="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="contact"><p class="skip"><label>Leave empty <input name="bot-field"></label></p>
+      <div class="row">
+        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" autocomplete="email" required></div>
+      </div>
+      <div class="field"><label for="c-topic">Topic</label>
+        <select id="c-topic" name="topic"><option>General question</option><option>Beta testing</option><option>Support</option><option>Press &amp; collaborations</option></select></div>
+      <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required></textarea></div>
+      <label class="check"><input type="checkbox" name="newsletter"> Also send me studio news and updates</label>
+      <div><button class="btn" type="submit">Send message</button></div>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note" style="margin:0">We usually reply within a couple of days.</p>
+    </form>
+    <aside class="info glass reveal">
+      <div><h3>Email</h3><p><a href="mailto:folixaudio@gmail.com">folixaudio@gmail.com</a></p></div>
+      <div><h3>Support</h3><p>Installation help and answers to common questions are in the <a href="faq.html">FAQ</a> and <a href="install.html">installation guide</a>.</p></div>
+      <div><h3>Follow</h3><p style="color:var(--ink-mute)">Socials are coming soon.</p></div>
+    </aside>
+  </div>
+</section>
+<section class="section" id="newsletter">
+  <div class="container">
+    <div class="cta-panel glass reveal">
+      <span class="eyebrow">Newsletter</span>
+      <h2 style="margin-top:16px">Studio news</h2>
+      <p>Updates, new releases and tips from the Folix studio. No spam, ever.</p>
+      <form class="signup" data-demo="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="newsletter"><p class="skip"><label>Leave empty <input name="bot-field"></label></p>
+        <label for="nl-newsletter" class="skip">Email address</label>
+        <input id="nl-newsletter" type="email" name="email" placeholder="you@studio.com" autocomplete="email" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Occasional updates only. Unsubscribe any time.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about">
+        <a class="brand" href="index.html" aria-label="Folix Audio home"><img src="assets/img/mark.svg" alt="" width="40" height="40"><span class="brand-word"><b data-brand="wordmark-top">FOLIX</b><span data-brand="wordmark-sub">AUDIO</span></span></a>
+        <p>Instruments and effects for producers and sound designers. VST3 &amp; AU plugins.</p>
+        
+      </div>
+      <div><h4>Plugins</h4><ul><li><a href="plugins.html">All plugins</a></li><li><a href="plugin-euphoria.html">Folix Euphora</a></li><li><a href="plugin-drop.html">Folix Drop 2</a></li><li><a href="plugin-eq-follower.html">Folix EQ Follower</a></li><li><a href="plugin-delay.html">Folix Delay</a></li><li><a href="plugin-shape-eq.html">Folix Shape EQ</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#newsletter">Newsletter</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="install.html">Installation guide</a></li><li><a href="eula.html">License / EULA</a></li><li><a href="privacy.html">Privacy policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; <span data-year>2026</span> Folix Audio. All rights reserved.</span><span>VST is a registered trademark of Steinberg Media Technologies GmbH. AU is a trademark of Apple Inc.</span></div>
+  </div>
+</footer>
+</body>
+</html>

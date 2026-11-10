@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plugins | Folix Audio</title>
+  <meta name="description" content="Synthesizer and effect plugins from Folix Audio, in VST3 and AU formats.">
+  <meta name="theme-color" content="#05040d">
+  <meta property="og:title" content="Plugins | Folix Audio">
+  <meta property="og:description" content="Synthesizer and effect plugins from Folix Audio, in VST3 and AU formats.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="index.html" aria-label="Folix Audio home">
+      <img src="assets/img/mark.svg" alt="" width="40" height="40">
+      <span class="brand-word"><b data-brand="wordmark-top">FOLIX</b><span data-brand="wordmark-sub">AUDIO</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links"><li><a href="index.html">Home</a></li><li><a href="plugins.html" aria-current="page">Plugins</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a class="btn btn-sm" href="contact.html#newsletter">Join the list</a></li></ul>
+  </nav>
+</header>
+<main id="main">
+<section class="hero hero-sm">
+  <div class="nebula" aria-hidden="true"><i></i><i></i><i></i><i></i></div><canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="container">
+    <span class="eyebrow">Plugins</span>
+    <h1 style="font-size:clamp(2.2rem,5.4vw,4.2rem)">The plugin <span class="grad-text">constellation</span></h1>
+    <p class="lead">Synths and effects for VST3 and AU hosts. Five plugins are available now: Euphora (multiband mastering dynamics effect) and Drop 2 (sub-bass instrument), each with a free demo, plus EQ Follower, Delay and Shape EQ at $29.99. Falling Waves and Backwash are in development.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:20px">
+  <div class="container">
+    <div class="section-head">
+      <div class="filters" role="group" aria-label="Filter plugins">
+        <button class="filter" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter" data-filter="instrument" aria-pressed="false" id="instruments">Instruments</button>
+        <button class="filter" data-filter="effect" aria-pressed="false" id="effects">Effects</button>
+      </div>
+      <p style="color:var(--ink-mute);font-size:.92rem">5 plugins · all available now</p>
+    </div>
+    <div class="grid">
+      <a class="card glass reveal" href="plugin-euphoria.html" data-cat="effect">
+        <div class="card-art card-shot" style="--h:300"><img src="assets/img/euphoria-card.jpg" alt="Folix Euphora plugin interface: three-band compressor, spectrum display, loudness meters, color and limiter sections" width="800" height="528" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag">Effect</span><span class="tag">Win VST3/Standalone · Mac VST3/AU/Standalone</span><span class="tag live">Available now</span></div>
+          <h3>Folix Euphora</h3>
+          <p>A multiband mastering dynamics plugin: per-band compression, warm color and a clean limiter for loud, polished masters.</p>
+          <div class="card-foot"><span>$40 · free demo</span><span class="arrow">Details</span></div>
+        </div>
+      </a><a class="card glass reveal" href="plugin-drop.html" data-cat="instrument">
+        <div class="card-art card-shot" style="--h:265"><img src="assets/img/drop-card.jpg" alt="Folix Drop 2 plugin interface: sub oscillator, harmonics, additive partials, filter, 808 drop, amp and voice sections with a keyboard" width="800" height="528" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag">Instrument</span><span class="tag">Win VST3 · Mac VST3/AU/Standalone</span><span class="tag live">Available now</span></div>
+          <h3>Folix Drop 2</h3>
+          <p>A sub-bass instrument for fat, lush basslines and deep sub that fills the low end.</p>
+          <div class="card-foot"><span>$40 · free demo</span><span class="arrow">Details</span></div>
+        </div>
+      </a><a class="card glass reveal" href="plugin-eq-follower.html" data-cat="effect">
+        <div class="card-art card-shot" style="--h:180"><img src="assets/img/eq-follower-card.jpg" alt="Folix EQ Follower plugin interface: spectrum with harmonic-tracking EQ nodes, six band strips, pitch tracker controls and level meters" width="800" height="640" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag">Effect</span><span class="tag">VST3 · Win (Mac TBA)</span><span class="tag live">Available now</span></div>
+          <h3>Folix EQ Follower</h3>
+          <p>EQ bands that ride the note: boost the 2nd harmonic and it stays there as the pitch moves.</p>
+          <div class="card-foot"><span>$29.99 launch price</span><span class="arrow">Details</span></div>
+        </div>
+      </a><a class="card glass reveal" href="plugin-delay.html" data-cat="effect">
+        <div class="card-art card-shot" style="--h:40"><img src="assets/img/delay-card.jpg" alt="Folix Delay plugin interface: tap colony display, delay, colony, tail, effect, levels and output sections" width="800" height="640" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag">Effect</span><span class="tag">VST3 · AU · Win / Mac</span><span class="tag live">Available now</span></div>
+          <h3>Folix Delay</h3>
+          <p>A two-stage delay: a COLONY of taps, then a filtered, diffused, modulated feedback loop with soft HQ repeats and ducking.</p>
+          <div class="card-foot"><span>$29.99 launch price</span><span class="arrow">Details</span></div>
+        </div>
+      </a><a class="card glass reveal" href="plugin-shape-eq.html" data-cat="effect">
+        <div class="card-art card-shot" style="--h:320"><img src="assets/img/shape-eq-card.jpg" alt="Folix Shape EQ plugin interface: output spectrum with A and B curves, morph section and six EQ bands with gain A and gain B" width="800" height="654" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <div class="card-tags"><span class="tag">Effect</span><span class="tag">VST3 · Win (Mac TBA)</span><span class="tag live">Available now</span></div>
+          <h3>Folix Shape EQ</h3>
+          <p>Two EQ curves, A and B, with a morph you drive by hand, by LFO or by input level.</p>
+          <div class="card-foot"><span>$29.99 launch price</span><span class="arrow">Details</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="section" id="newsletter">
+  <div class="container">
+    <div class="cta-panel glass reveal">
+      <span class="eyebrow">Newsletter</span>
+      <h2 style="margin-top:16px">Studio news</h2>
+      <p>Updates, new releases and tips from the Folix studio. No spam, ever.</p>
+      <form class="signup" data-demo="newsletter" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="newsletter"><p class="skip"><label>Leave empty <input name="bot-field"></label></p>
+        <label for="nl-newsletter" class="skip">Email address</label>
+        <input id="nl-newsletter" type="email" name="email" placeholder="you@studio.com" autocomplete="email" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Occasional updates only. Unsubscribe any time.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="about">
+        <a class="brand" href="index.html" aria-label="Folix Audio home"><img src="assets/img/mark.svg" alt="" width="40" height="40"><span class="brand-word"><b data-brand="wordmark-top">FOLIX</b><span data-brand="wordmark-sub">AUDIO</span></span></a>
+        <p>Instruments and effects for producers and sound designers. VST3 &amp; AU plugins.</p>
+        
+      </div>
+      <div><h4>Plugins</h4><ul><li><a href="plugins.html">All plugins</a></li><li><a href="plugin-euphoria.html">Folix Euphora</a></li><li><a href="plugin-drop.html">Folix Drop 2</a></li><li><a href="plugin-eq-follower.html">Folix EQ Follower</a></li><li><a href="plugin-delay.html">Folix Delay</a></li><li><a href="plugin-shape-eq.html">Folix Shape EQ</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#newsletter">Newsletter</a></li></ul></div>
+      <div><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="install.html">Installation guide</a></li><li><a href="eula.html">License / EULA</a></li><li><a href="privacy.html">Privacy policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; <span data-year>2026</span> Folix Audio. All rights reserved.</span><span>VST is a registered trademark of Steinberg Media Technologies GmbH. AU is a trademark of Apple Inc.</span></div>
+  </div>
+</footer>
+</body>
+</html>
