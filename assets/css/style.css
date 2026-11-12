@@ -232,8 +232,10 @@ section{position:relative}
 .footer-grid a:hover{color:var(--ink)}
 .footer-grid .about p{max-width:320px;font-size:.94rem;margin-top:18px}
 .socials{display:flex;gap:10px;margin-top:6px}
-.socials a{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--glass);border:1px solid var(--line)}
+.socials a{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--glass);border:1px solid var(--line);transition:border-color .2s,background .2s}
+.socials a:hover{border-color:rgba(94,231,255,.45);background:rgba(94,231,255,.08)}
 .socials svg{width:18px;height:18px;fill:var(--ink-dim)}
+.socials a:hover svg{fill:var(--ink)}
 .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:.84rem;color:var(--ink-mute)}
 
 /* ---------- reveal ---------- */
